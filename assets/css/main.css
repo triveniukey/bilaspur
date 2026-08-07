@@ -7499,7 +7499,7 @@ html.lenis body {
   background: var(--rs-theme-red);
 }
 .rs-header-area.has-theme-red .main-menu .submenu li a {
-  color: var(--rs-text-primary);
+  color: #126C6F;
 }
 .rs-header-area.has-theme-red .main-menu .submenu li a:hover {
   color: var(--rs-theme-red);
