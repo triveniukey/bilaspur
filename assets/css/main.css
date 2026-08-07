@@ -922,7 +922,7 @@ textarea:focus {
 }
 
 .section-space-bottom {
-  padding-bottom: 120px;
+  padding-bottom: 70px;
 }
 @media only screen and (max-width: 1199px) {
   .section-space-bottom {
@@ -9033,7 +9033,7 @@ html.lenis body {
   display: grid;
   grid-template-columns: 400px auto;
   gap: 30px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 @media only screen and (max-width: 1600px) {
   .rs-footer-one .rs-footer-wrapper {
