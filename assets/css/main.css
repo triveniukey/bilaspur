@@ -9388,7 +9388,7 @@ html.lenis body {
   fill: var(--rs-white);
 }
 .rs-footer-one.has-theme-red-two .rs-footer-social a {
-  background: #21252D;
+  background: var(--rs-theme-red);
 }
 .rs-footer-one.has-theme-red-two .rs-footer-social a:hover {
   background: var(--rs-theme-red);
