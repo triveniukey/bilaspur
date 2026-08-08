@@ -4837,7 +4837,7 @@ html.lenis body {
   }
 }
 .rs-header-two .main-menu ul li a {
-  color: rgb(8, 8, 8);
+  color: #090909;
 }
 .rs-header-two .header-logo {
   width: 90px;
@@ -7179,16 +7179,11 @@ html.lenis body {
 }
 .main-menu > ul {
   display: inline-flex;
-  gap: 0 20px;
+  gap: 0 30px;
 }
 @media only screen and (max-width: 1366px) {
   .main-menu > ul {
-    gap: 0 20px;
-  }
-}
-@media only screen and (max-width: 1666px) {
-  .main-menu > ul {
-    gap: 0 16px;
+    gap: 0 30px;
   }
 }
 .main-menu > ul > li:hover > a {
@@ -7219,7 +7214,7 @@ html.lenis body {
   list-style: none;
 }
 .main-menu li a {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--rs-white);
   padding: 45px 0px;
@@ -7495,7 +7490,7 @@ html.lenis body {
   color: var(--rs-theme-red);
 }
 .rs-header-area.has-theme-red .main-menu > ul > li > a {
-  padding: 25px 0px;
+  padding: 33px 0px;
 }
 .rs-header-area.has-theme-red .main-menu .submenu li:hover > a {
   color: var(--rs-theme-red);
