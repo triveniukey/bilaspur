@@ -1,3 +1,4 @@
+
 (function ($) {
     "use strict";
     var windowOn = $(window);
@@ -860,3 +861,68 @@
 
 })(jQuery);
 
+ 
+    function chooseClasses(selectedClass) {
+        var documentBox = document.getElementById('documentUploadBox');
+        var documentInput = document.getElementById('uploadDocument');
+
+        var showClasses = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+
+        if (showClasses.includes(selectedClass)) {
+            documentBox.style.display = 'block';
+            documentInput.setAttribute('required', 'required');
+        } else {
+            documentBox.style.display = 'none';
+            documentInput.removeAttribute('required');
+            documentInput.value = '';
+        }
+    }
+
+
+    function generateCaptcha() {
+        var chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+        var captcha = "";
+        for (var i = 0; i < 7; i++) {
+            captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        document.getElementById('vCode').value = captcha;
+        document.getElementById('vCodeInput').value = "";
+    }
+
+    // 3. Captcha Compare
+    function compareVCode() {
+        var originalCode = document.getElementById('vCode').value.trim().toUpperCase();
+        var userInput = document.getElementById('vCodeInput').value.trim().toUpperCase();
+
+        if (userInput === "") {
+            return false;
+        }
+
+        if (userInput !== originalCode) {
+            alert("Captcha code galat hai! Please sahi code enter karein.");
+            document.getElementById('vCodeInput').value = "";
+            document.getElementById('vCodeInput').focus();
+            return false;
+        }
+        return true;
+    }
+
+
+    document.getElementById('admissionForm').addEventListener('submit', function (e) {
+        if (!compareVCode()) {
+            e.preventDefault();
+            alert("Please enter correct Captcha code.");
+            return false;
+        }
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+    
+        var classSelect = document.getElementById('otpClass');
+        if (classSelect.value) {
+            chooseClasses(classSelect.value);
+        }
+
+      
+    });
