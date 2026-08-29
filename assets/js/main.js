@@ -1,4 +1,23 @@
-
+       const bannerSwiper = new Swiper('.rs-banner-swiper', {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+            navigation: {
+                nextEl: '.rs-banner-swiper .swiper-button-next',
+                prevEl: '.rs-banner-swiper .swiper-button-prev',
+            },
+            pagination: {
+                el: '.rs-banner-swiper .swiper-pagination',
+                clickable: true,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            }
+        });
 (function ($) {
     "use strict";
     var windowOn = $(window);
@@ -6,8 +25,8 @@
     /* Windows Load */
     $(window).on('load', function () {
         // Preloader Activation
-        $("#pre-load").delay(600).fadeOut(500);
-        $(".pre-loader").delay(600).fadeOut(500);
+        $("#pre-load").delay(100).fadeOut(200);
+        $(".pre-loader").delay(100).fadeOut(200);
 
         // Wow Animation Init
         wowAnimation();
@@ -634,7 +653,7 @@
             makeTimer(endTime, "countdown3");
             makeTimer(endTime, "countdown4");
             makeTimer(endTime, "countdown5");
-        }, 1000);
+        }, 4000);
 
         // Swiper Hover & active BG effect Active
         function swiperBgActiveEffect() {

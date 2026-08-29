@@ -1001,31 +1001,31 @@ Web Solution By : <a style="color: white;" href="https://mitpltd.com/"> Maharish
     <script src="assets/js/plugins/nouislider.min.js"></script>
     <script src="assets/js/vendor/odometer.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-document.querySelectorAll('.menu-item-has-children').forEach(function(item){
+        <script>
+    document.querySelectorAll('.menu-item-has-children').forEach(function(item){
 
-    let btn=document.createElement('span');
-    btn.className='menu-toggle-btn';
-    item.appendChild(btn);
+        let btn=document.createElement('span');
+        btn.className='menu-toggle-btn';
+        item.appendChild(btn);
 
-    btn.addEventListener('click',function(e){
+        btn.addEventListener('click',function(e){
 
-        e.preventDefault();
-        e.stopPropagation();
+            e.preventDefault();
+            e.stopPropagation();
 
-        this.classList.toggle('active');
+            this.classList.toggle('active');
 
-        let submenu=item.querySelector(':scope > .submenu');
+            let submenu=item.querySelector(':scope > .submenu');
 
-        if(submenu.style.display==="block"){
-            submenu.style.display="none";
-        }else{
-            submenu.style.display="block";
-        }
+            if(submenu.style.display==="block"){
+                submenu.style.display="none";
+            }else{
+                submenu.style.display="block";
+            }
+
+        });
 
     });
-
-});
-</script>
+    </script>
 </body>
 </html> 
