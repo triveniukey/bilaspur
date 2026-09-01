@@ -4619,6 +4619,7 @@ html.lenis body {
 @media only screen and (max-width: 767px) {
   .rs-header-two .header-logo .logo-red {
     display: block;
+    width: 260px;
   }
 }
 .rs-header-two .header-logo-wrapper {
@@ -5613,7 +5614,7 @@ html.lenis body {
 .header-right {
   display: flex;
   gap: 35px;
-  margin-left: 10px;
+  margin-left: 11px;
   align-items: center;
 }
 
