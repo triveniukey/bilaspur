@@ -2699,7 +2699,7 @@ textarea:focus {
   background-image: linear-gradient(180deg, rgba(0, 25, 44, 0) -3%, #00192C 133.75%);
 }
 .rs-breadcrumb-one .rs-breadcrumb-title {
-  font-size: 56px;
+  font-size: 45px;
   line-height: 1.12;
   color: var(--rs-white);
   font-weight: 500;
@@ -13600,7 +13600,7 @@ html.lenis body {
 }
 .rs-contact-three .rs-contact-input-title label {
   font-size: 16px;
-  color: var(--rs-title-tertiary);
+  color: rgb(6, 41, 147);
   margin-bottom: 7px;
   font-weight: 500;
 }
@@ -13611,7 +13611,7 @@ html.lenis body {
   margin-bottom: 20px;
 }
 .rs-contact-three .rs-contact-input input::placeholder {
-  color: rgba(76, 76, 76, 0.7803921569);
+  color: rgba(4, 38, 106, 0.506);
 }
 .rs-contact-three .rs-contact-input .nice-select {
   width: 100%;
@@ -13619,7 +13619,7 @@ html.lenis body {
   display: flex;
   align-items: center;
   background: var(--rs-white);
-  color: rgba(76, 76, 76, 0.78);
+  color: rgba(2, 25, 119, 0.78);
 }
 .rs-contact-three .rs-contact-input .nice-select .list {
   margin-top: 0;
@@ -22079,10 +22079,12 @@ html.lenis body {
 .top-box h2{
     font-size:28px;
     margin-bottom:8px;
+    color: white;
 }
 
 .top-box h3{
     font-size:22px;
+    color: white;
 }
 
 .top-box h4{
@@ -22273,7 +22275,7 @@ html.lenis body {
 .campus-card table{
     width:100%;
     border-collapse:separate;
-    border-spacing:0 10px;
+    /* border-spacing:0 10px; */
 }
 
 .campus-card table tr{
@@ -22290,7 +22292,7 @@ html.lenis body {
 
 .campus-card table td:first-child{
     width:72%;
-    border-radius:10px 0 0 10px;
+    /* border-radius:10px 0 0 10px; */
 }
 
 .campus-card table td:last-child{
@@ -22299,7 +22301,7 @@ html.lenis body {
     background:linear-gradient(135deg,#D4AF37,#F4D35E);
     color:#5A0B22;
     font-weight:bold;
-    border-radius:0 10px 10px 0;
+    /* border-radius:0 10px 10px 0; */
 }
 
 .campus-card table tr:hover{
