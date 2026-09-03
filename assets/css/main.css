@@ -4823,6 +4823,12 @@ html.lenis body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 1966px) {
+ .rs-header-two .header-left {
+
+  gap: 60px;
+}
+}
 @media only screen and (max-width: 1366px) {
   .rs-header-two .header-btn {
     display: none;
