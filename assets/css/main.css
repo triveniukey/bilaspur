@@ -4823,10 +4823,10 @@ html.lenis body {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 1966px) {
+@media only screen  and (min-width : 1400px) and (max-width: 2066px) {
  .rs-header-two .header-left {
 
-  gap: 60px;
+  gap: 80px;
 }
 }
 @media only screen and (max-width: 1366px) {
@@ -13101,11 +13101,12 @@ html.lenis body {
 .rs-contact-one .rs-contact-bg-thumb {
   position: absolute;
   width: 100%;
-  height: 600px;
+  height: 550px;
   bottom: 0;
   left: 0;
   z-index: -1;
   border-radius: 12px;
+  
 }
 @media only screen and (max-width: 991px) {
   .rs-contact-one .rs-contact-bg-thumb {
@@ -13595,6 +13596,7 @@ html.lenis body {
   padding-bottom: 30px;
   background: var(--rs-white);
   border-radius: 12px;
+  border: 1px solid var(--rs-theme-blue);
 }
 @media only screen and (max-width: 1199px) {
   .rs-contact-three .rs-contact-form-wrapper {
@@ -13608,11 +13610,17 @@ html.lenis body {
   font-size: 16px;
   color: rgb(6, 41, 147);
   margin-bottom: 7px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .rs-contact-three .rs-contact-input-box {
   margin-bottom: 20px;
 }
+.rs-contact-input-title label span{
+  color: rgb(255, 0, 0);
+  font-weight: 700;
+  font-size: 17px;
+}
+
 .rs-contact-three .rs-contact-input-box .nice-select {
   margin-bottom: 20px;
 }
@@ -22258,30 +22266,19 @@ html.lenis body {
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
+    align-items:stretch;   /* Equal height */
 }
 
-.campus-card h3{
-    text-align:center;
-    color:#5A0B22;
-    font-size:28px;
-    margin-bottom:20px;
-    position:relative;
-}
-
-.campus-card h3::after{
-    content:"";
-    width:70px;
-    height:3px;
-    background:#D4AF37;
-    display:block;
-    margin:8px auto;
-    border-radius:10px;
+.campus-card{
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
 
 .campus-card table{
     width:100%;
     border-collapse:separate;
-    /* border-spacing:0 10px; */
+    flex:1;               /* Table poori height le */
 }
 
 .campus-card table tr{
@@ -22298,7 +22295,6 @@ html.lenis body {
 
 .campus-card table td:first-child{
     width:72%;
-    /* border-radius:10px 0 0 10px; */
 }
 
 .campus-card table td:last-child{
@@ -22307,12 +22303,28 @@ html.lenis body {
     background:linear-gradient(135deg,#D4AF37,#F4D35E);
     color:#5A0B22;
     font-weight:bold;
-    /* border-radius:0 10px 10px 0; */
 }
 
 .campus-card table tr:hover{
     transform:translateY(-3px);
     transition:.3s;
+}
+.campus-card h3{
+    text-align:center;
+    color:#5A0B22;
+    font-size:28px;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.campus-card h3::after{
+    content:"";
+    width:70px;
+    height:3px;
+    background:#D4AF37;
+    display:block;
+    margin:8px auto;
+    border-radius:10px;
 }
 
 .holiday-section{
@@ -23135,4 +23147,80 @@ Advertisement Section
 
 #fran .banner-links a:hover{
     text-decoration:underline;
+}
+.heroSwiper{
+    width:50%;
+    height:450px;   /* Pehle 650px tha */
+}
+
+.heroSwiper .swiper-slide{
+    height:450px;
+}
+
+.heroSwiper .swiper-slide img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.heroSwiper .overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.heroSwiper .slide-content{
+    position:absolute;
+    top:50%;
+    left:10%;
+    transform:translateY(-50%);
+    max-width:650px;
+    color:#fff;
+    z-index:5;
+}
+
+.heroSwiper .slide-content span{
+    display:inline-block;
+    background:#D4AF37;
+    color:#5A0B22;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.heroSwiper .slide-content h1{
+    font-size:58px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.heroSwiper .slide-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.heroSwiper .btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#7B102F;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+
+.heroSwiper .swiper-button-next,
+.heroSwiper .swiper-button-prev{
+    color:#fff;
+}
+
+.heroSwiper .swiper-pagination-bullet{
+    background:#fff;
+}
+
+.heroSwiper .swiper-pagination-bullet-active{
+    background:#D4AF37;
 }

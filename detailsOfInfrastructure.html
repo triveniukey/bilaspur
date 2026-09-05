@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/vendor/spacing.css">
     <link rel="stylesheet" href="assets/css/vendor/remixicon.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body class="rs-smoother-yes">
@@ -41,8 +42,7 @@
     </div>
 
     <!-- preloader end -->
-  
-    <!-- Header area start -->
+ <!-- Header area start -->
     <header>
         <div class="rs-header-area rs-header-two has-theme-red">
             <div class="container-fluid g-0">
@@ -52,7 +52,7 @@
                         <div class="header-top-content">
                             <span class="header-top-title">
                                 <i class="ri-graduation-cap-fill"></i>
-                                Welcome to Maharishi Vidya Mandir Bilaspur-1 School
+                                Welcome to Maharishi Vidya Mandir Bilaspur School
                             </span>
                         </div>
                     </div>
@@ -305,7 +305,7 @@
                         <div class="header-logo-wrapper">
                             <div class="header-logo">
                                 <a class="logo-white" href="index.html"><img style="margin-bottom: -20px;"
-                                        src="assets/images/mvmbilaspur/mvmbilaspur1 (3).webp" alt="logo">
+                                        src="assets/images/mvmbilaspur/2NewMVM Bilaspur - 1 (1).webp" alt="logo">
                                             
                                 </a>
                                 <a class="logo-red" href="index.html"><img 
@@ -506,7 +506,6 @@
         </div>
     </header>
     <!-- header area two end-->
-    <!-- Header area end -->
 
     <!-- Offcanvas area start -->
 
@@ -716,7 +715,42 @@ Maharishi Vidya Mandir (MVM) School, Bilaspur is one of the premier CBSE affilia
 
     </div>
 
-</section>                
+</section>         
+    <div class="campus-heading">
+        <h2>Infrastructure</h2>
+        <div class="heading-line"></div>
+    </div>     
+<div class="swiper heroSwiper">
+    <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+            <img src="assets/images/mvmbilaspur/MVM -I, BSP  ( SCHOOL IMAGE ).jpeg" alt="">
+            <div class="overlay"></div>
+
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+            <img src="assets/images/mvmbilaspur/MVM - I, BSP  ( YOGA ).jpeg" alt="">
+            <div class="overlay"></div>
+
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+            <img src="assets/images/mvmbilaspur/MVM - I, BSP  ( C.G. PANTHI DANCE ).jpeg" alt="">
+            <div class="overlay"></div>
+
+          
+        </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>  
 </div>
                 </div>
             
@@ -895,6 +929,26 @@ Maharishi Vidya Mandir (MVM) School, Bilaspur is one of the premier CBSE affilia
     <script src="assets/js/plugins/flatpickr.min.js"></script>
     <script src="assets/js/plugins/nouislider.min.js"></script>
     <script src="assets/js/vendor/odometer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>const swiper = new Swiper(".heroSwiper", {
+    loop:true,
+    autoplay:{
+        delay:4000,
+        disableOnInteraction:false,
+    },
+    effect:"fade",
+    speed:1000,
+
+    pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+    },
+
+    navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+    },
+});</script>
 </body>
 </html>
